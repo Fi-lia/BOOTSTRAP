@@ -1,0 +1,98 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #F8F7F1;
+
+}
+
+
+/* fond */
+.bg{
+    border: 0.5px solid #000; 
+    position: fixed;
+    top: 0;
+    height: 96%;
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 1%;
+} 
+
+
+/* barre de navigation */
+
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    /*trait invisible*/
+    background: #E5D48E;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    /*vitesse defilement du trait*/
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+    /*trait visible*/
+}
+
+/* paragraphe*/
+
+p{
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.32px;
+    width: 85%;
+    margin-left: 140px;
+}
+
+/* header */
+
+.content {
+    width: 100%;
+    position: absolute; 
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #E5D48E;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 176px;
+    font-weight: 900;
+}
